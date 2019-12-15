@@ -2,17 +2,14 @@
   "name": "next-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://uahachik.github.io/next-test",
+  "homepage": "https://next-test.kotenkoroman2018.now.sh/profile",
   "scripts": {
-    "deploy": "yarn export && touch out/.nojekyll && gh-pages -t -d out",
     "dev": "next dev",
     "build": "next build",
     "export": "yarn run build && next export",
     "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-source-maps": "0.0.3",
-    "gh-pages": "^2.1.1",
     "isomorphic-unfetch": "^3.0.0",
     "memoize-one": "^5.1.1",
     "next": "9.1.5",

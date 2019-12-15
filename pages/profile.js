@@ -1,6 +1,5 @@
 import fetch from 'isomorphic-unfetch';
-import { useRouter } from 'next/router';
-import { useState, useEffect, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import Router from 'next/router';
 import PropTypes from 'prop-types';
 
@@ -9,34 +8,21 @@ import AuthContext from '../context/AuthContext';
 
 const Profile = ({ data }) => {
   const { isAuth } = useContext(AuthContext);
-  const [redirect, setRediret] = useState(false);
 
-  console.log(isAuth);
-  //   useEffect(() => {
-  //     if (!isAuth) {
-  //       Router.push('/login');
-  //     }
-  //   }, []);
-
-  const router = useRouter();
-  console.log(router);
-
-  (function() {
+  useEffect(() => {
     if (!isAuth) {
-      //   Router.push('/login');
+      Router.push('/login');
     }
-    console.log(isAuth);
-  })();
+  }, [isAuth]);
 
   return (
     <Layout>
       <div>
-        {console.log('isAuth:', isAuth)}
         <h2 className="card-header text-center py-2">Account Page</h2>
         {data.map(profile => (
           <div className="list-group-item" key={profile.id}>
-            <div className="card card-header">{profile.name}</div>
-            <p className="card-text px-2">id: {profile.email}</p>
+            <div className="card card-header">Full Name: {profile.name}</div>
+            <p className="card-text pt-2 ml-4">email: {profile.email}</p>
           </div>
         ))}
       </div>
