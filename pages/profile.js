@@ -4,7 +4,7 @@ import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
 import PropTypes from 'prop-types';
 
-import Layout from './layout';
+import Layout from '../components/layout';
 import AuthContext from '../context/AuthContext';
 
 const Profile = ({ data }) => {

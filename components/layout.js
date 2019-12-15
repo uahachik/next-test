@@ -1,6 +1,6 @@
 import { useState, useMemo, useContext } from 'react';
 import Head from 'next/head';
-import Nav from '../components/nav';
+import Nav from './nav';
 // import AuthContext from '../components/AuthContext';
 
 const Layout = props => {
