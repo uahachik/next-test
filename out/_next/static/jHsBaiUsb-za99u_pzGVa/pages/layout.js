@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{J704:function(n,w,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/layout",function(){return o("H3qJ")}])}},[["J704",0,1]]]);

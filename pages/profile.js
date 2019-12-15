@@ -33,13 +33,10 @@ const Profile = ({ data }) => {
       <div>
         {console.log('isAuth:', isAuth)}
         <h2 className="card-header text-center py-2">Account Page</h2>
-        <h4 className="ml-3 py-2">Rem-rest JSON stars:</h4>
         {data.map(profile => (
           <div className="list-group-item" key={profile.id}>
-            <div className="card card-header">
-              {profile.firstName} {profile.lastName}
-            </div>
-            <p className="card-text px-2">id: {profile.id}</p>
+            <div className="card card-header">{profile.name}</div>
+            <p className="card-text px-2">id: {profile.email}</p>
           </div>
         ))}
       </div>
@@ -48,10 +45,8 @@ const Profile = ({ data }) => {
 };
 
 Profile.getInitialProps = async ({ req }) => {
-  const res = await fetch('http://rem-rest-api.herokuapp.com/api/users');
-
-  const { data } = await res.json();
-
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  const data = await res.json();
   return { data };
 };
 
