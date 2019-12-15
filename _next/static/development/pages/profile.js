@@ -9496,7 +9496,7 @@ Profile.propTypes = {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!**********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprofile&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Cprofile.js ***!
   \**********************************************************************************************************************/
@@ -9519,5 +9519,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=profile.js.map
