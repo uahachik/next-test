@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch';
-import Layout from '../components/layout';
+import Layout from './layout';
 import PropTypes from 'prop-types';
 
 const News = ({ data }) => (

@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import Router from 'next/router';
 
-import Layout from '../components/layout';
+import Layout from './layout';
 import { Alert } from '../components/alert';
 import { credentials } from '../config/credentials';
 import AuthContext from '../context/AuthContext';
