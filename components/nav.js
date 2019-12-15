@@ -1,56 +1,73 @@
-import React from 'react'
-import Link from 'next/link'
+import { useContext } from 'react';
+import Link from 'next/link';
 
-const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+import AuthContext from '../context/AuthContext';
 
-const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
-    </ul>
+const Nav = () => {
+  const { isAuth, logOut } = useContext(AuthContext);
 
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
-)
+  return (
+    <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
+      <div className="container">
+        <a className="navbar-brand" href="#">
+          Frontend Test
+        </a>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav ml-auto mr-auto">
+            <li className="nav-item">
+              <Link href="/">
+                <a className="nav-link">Site</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/news">
+                <a className="nav-link">News</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/profile">
+                <a className="nav-link">Account</a>
+              </Link>
+            </li>
+          </ul>
+          <ul className="navbar-nav">
+            <li className="mr-4">
+              {isAuth ? (
+                <span
+                  className="nav-link bg-success text-white px-2"
+                  style={{ borderRadius: '3%' }}
+                >
+                  Hello, React Dev!
+                </span>
+              ) : (
+                <span
+                  className="nav-link bg-light text-warning"
+                  style={{ borderRadius: '3%' }}
+                >
+                  You Not Logged In
+                </span>
+              )}
+            </li>
+            <li className="nav-item">
+              {isAuth ? (
+                <Link href="#">
+                  <a className="nav-link">
+                    <span onClick={() => logOut()}>Logout</span>
+                  </a>
+                </Link>
+              ) : (
+                <Link href="/login">
+                  <a className="nav-link">
+                    {isAuth ? <span>Logout</span> : <span>Login</span>}
+                  </a>
+                </Link>
+              )}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-export default Nav
+export default Nav;
