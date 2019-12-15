@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://uahachik.github.io/next-test",
   "scripts": {
-    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
+    "deploy": "yarn export && touch out/.nojekyll && gh-pages -t -d out",
     "dev": "next dev",
     "build": "next build",
-    "export": "npm run build && next export",
+    "export": "yarn run build && next export",
     "start": "next start"
   },
   "dependencies": {
