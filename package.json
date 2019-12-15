@@ -2,12 +2,16 @@
   "name": "next-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://uahachik.github.io/next-test",
   "scripts": {
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
+    "export": "npm run build && next export",
     "start": "next start"
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "isomorphic-unfetch": "^3.0.0",
     "memoize-one": "^5.1.1",
     "next": "9.1.5",

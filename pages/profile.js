@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch';
-import { useContext } from 'react';
+import { useRouter } from 'next/router';
+import { useState, useEffect, useContext } from 'react';
 import Router from 'next/router';
 import PropTypes from 'prop-types';
 
@@ -8,13 +9,29 @@ import AuthContext from '../context/AuthContext';
 
 const Profile = ({ data }) => {
   const { isAuth } = useContext(AuthContext);
+  const [redirect, setRediret] = useState(false);
 
-  if (!isAuth) {
-    Router.push('/login');
-  }
+  console.log(isAuth);
+  //   useEffect(() => {
+  //     if (!isAuth) {
+  //       Router.push('/login');
+  //     }
+  //   }, []);
+
+  const router = useRouter();
+  console.log(router);
+
+  (function() {
+    if (!isAuth) {
+      //   Router.push('/login');
+    }
+    console.log(isAuth);
+  })();
+
   return (
     <Layout>
       <div>
+        {console.log('isAuth:', isAuth)}
         <h2 className="card-header text-center py-2">Account Page</h2>
         <h4 className="ml-3 py-2">Rem-rest JSON stars:</h4>
         {data.map(profile => (
