@@ -1,32 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\login.js"],{
-
-/***/ "./components/alert.js":
-/*!*****************************!*\
-  !*** ./components/alert.js ***!
-  \*****************************/
-/*! exports provided: Alert */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return Alert; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "D:\\Script\\next-test\\components\\alert.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-var Alert = function Alert() {
-  return __jsx("div", {
-    className: "bg-danger text-white text-center py-2 mb-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 2
-    },
-    __self: this
-  }, "The data is entered incorrectly.");
-};
-
-/***/ }),
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
 /***/ "./components/layout.js":
 /*!******************************!*\
@@ -331,39 +303,6 @@ var Nav = function Nav() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
-
-/***/ }),
-
-/***/ "./config/credentials.js":
-/*!*******************************!*\
-  !*** ./config/credentials.js ***!
-  \*******************************/
-/*! exports provided: credentials */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "credentials", function() { return credentials; });
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-
-var credentials = function credentials() {
-  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function credentials$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          return _context.abrupt("return", {
-            username: 'reactdev',
-            password: '123456'
-          });
-
-        case 1:
-        case "end":
-          return _context.stop();
-      }
-    }
-  });
-};
 
 /***/ }),
 
@@ -5254,21 +5193,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flogin&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Clogin.js!./":
-/*!**************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flogin&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Clogin.js ***!
-  \**************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Cindex.js!./":
+/*!*********************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Cindex.js ***!
+  \*********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/login", function() {
-      var mod = __webpack_require__(/*! ./pages/login.js */ "./pages/login.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/login.js */ "./pages/login.js", function() {
-          if(!next.router.components["/login"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/login.js */ "./pages/login.js")
-          next.router.update("/login", updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage)
         })
       }
       return mod
@@ -9395,234 +9334,79 @@ try {
 
 /***/ }),
 
-/***/ "./pages/login.js":
+/***/ "./pages/index.js":
 /*!************************!*\
-  !*** ./pages/login.js ***!
+  !*** ./pages/index.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _components_alert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/alert */ "./components/alert.js");
-/* harmony import */ var _config_credentials__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config/credentials */ "./config/credentials.js");
-/* harmony import */ var _context_AuthContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../context/AuthContext */ "./context/AuthContext.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+var _jsxFileName = "D:\\Script\\next-test\\pages\\index.js";
 
-var _jsxFileName = "D:\\Script\\next-test\\pages\\login.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-
-
-
-
-var Login = function Login() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_context_AuthContext__WEBPACK_IMPORTED_MODULE_6__["default"]),
-      logIn = _useContext.logIn;
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
-      userName = _useState[0],
-      setUserName = _useState[1];
-
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
-      userPassword = _useState2[0],
-      setUserPassword = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
-      badCredentials = _useState3[0],
-      setBadCredentials = _useState3[1];
-
-  var onSubmit = function onSubmit(e) {
-    var _ref, username, password;
-
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function onSubmit$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            e.preventDefault();
-            _context.next = 3;
-            return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(Object(_config_credentials__WEBPACK_IMPORTED_MODULE_5__["credentials"])());
-
-          case 3:
-            _ref = _context.sent;
-            username = _ref.username;
-            password = _ref.password;
-
-            if (!(username === userName && password === userPassword)) {
-              _context.next = 11;
-              break;
-            }
-
-            logIn(userName);
-            return _context.abrupt("return", next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/profile'));
-
-          case 11:
-            setBadCredentials(true);
-            setTimeout(function () {
-              setBadCredentials(false);
-            }, 3000);
-
-          case 13:
-          case "end":
-            return _context.stop();
-        }
-      }
-    });
-  };
-
-  return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+var Index = function Index() {
+  return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 4
     },
     __self: this
-  }, badCredentials && __jsx(_components_alert__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
+  }, __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 5
     },
     __self: this
-  }), __jsx("div", {
-    className: "card m-auto mb-3 w-50",
+  }, __jsx("h2", {
+    className: "text-center py-1 pt-5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 6
     },
     __self: this
-  }, __jsx("h4", {
-    className: "card-header",
+  }, "Welcome to the Main Page"), __jsx("h2", {
+    className: "text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 7
     },
     __self: this
-  }, "Login"), __jsx("div", {
-    className: "card-body",
+  }, "of React Server Side Rendering."), __jsx("h2", {
+    className: "text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 8
     },
     __self: this
-  }, __jsx("form", {
-    className: "form",
-    onSubmit: onSubmit,
+  }, "I wish you to make the right choose like in 2012."), __jsx("h2", {
+    className: "text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 11
     },
     __self: this
-  }, __jsx("div", {
-    className: "form-group w-100",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }, userName.length === 0 ? __jsx("label", {
-    htmlFor: "userName",
-    className: "text-warning",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, "Name is required.") : __jsx("label", {
-    htmlFor: "userName",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, "Name"), __jsx("input", {
-    type: "text",
-    name: "userName",
-    placeholder: "What should I call you?",
-    value: userName,
-    onChange: function onChange(e) {
-      return setUserName(e.target.value);
-    },
-    className: "form-control",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  })), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, userPassword.length === 0 ? __jsx("label", {
-    htmlFor: "userName",
-    className: "text-warning",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: this
-  }, "Password is required.") : __jsx("label", {
-    htmlFor: "userName",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }, "Password"), __jsx("input", {
-    type: "password",
-    name: "password",
-    placeholder: "Enter your password",
-    value: userPassword,
-    onChange: function onChange(e) {
-      return setUserPassword(e.target.value);
-    },
-    className: "form-control",
-    required: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: this
-  })), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: this
-  }, __jsx("input", {
-    type: "submit",
-    value: "\u041F\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0438",
-    className: "btn btn-primary mt-3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
-  }))))));
+  }, "Go Ahead and Be Creative!")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Login);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 4:
-/*!******************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Flogin&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Clogin.js ***!
-  \******************************************************************************************************************/
+/***/ 3:
+/*!*************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Cindex.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Flogin&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Clogin.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Flogin&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Clogin.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=D%3A%5CScript%5Cnext-test%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
@@ -9638,5 +9422,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=login.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=index.js.map
