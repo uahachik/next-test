@@ -1,6 +1,6 @@
 import React from 'react';
 // import App from 'next/app';
-import memoize from 'memoize-one';
+// import memoize from 'memoize-one';
 
 import AuthContext from '../context/AuthContext';
 
@@ -45,7 +45,7 @@ import AuthContext from '../context/AuthContext';
 //   }
 // }
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 const MyApp = ({ Component, pageProps }) => {
   const [isAuth, setIsAuth] = useState(false);
@@ -67,14 +67,14 @@ const MyApp = ({ Component, pageProps }) => {
     setIsAuth(false);
   };
 
+  const value = useMemo(() => ({ isAuth, logIn, logOut }), [
+    isAuth,
+    logIn,
+    logOut
+  ]);
+
   return (
-    <AuthContext.Provider
-      value={{
-        isAuth,
-        logIn: memoize(logIn),
-        logOut: memoize(logOut)
-      }}
-    >
+    <AuthContext.Provider value={value}>
       <Component {...pageProps} />
     </AuthContext.Provider>
   );

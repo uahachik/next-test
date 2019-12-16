@@ -1,18 +1,8 @@
-import { useState, useMemo, useContext } from 'react';
 import Head from 'next/head';
 import Nav from './nav';
-// import AuthContext from '../components/AuthContext';
 
-const Layout = props => {
-  // const { darkMode, setDarkMode } = useContext(AuthContext);
-
-  // const [isLogin, setIsLogin] = useState(false);
-
-  // const value = useMemo(() => ({ isLogin, setIsLogin }), [isLogin, setIsLogin]);
-
+const Layout = ({ children }) => {
   return (
-    // <AuthContext.Provider value={value}>
-    // <AuthContext.Provider value="string">
     <div>
       <Head>
         <title>Frontend Test</title>
@@ -26,11 +16,9 @@ const Layout = props => {
           href="https://bootswatch.com/4/cerulean/bootstrap.min.css"
         />
       </Head>
-      {/* <Nav value="string" /> */}
       <Nav />
-      <div className="container">{props.children}</div>
+      <div className="container">{children}</div>
     </div>
-    // </AuthContext.Provider>
   );
 };
 

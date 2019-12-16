@@ -6,6 +6,6 @@ Zeit: "Think about how webapps are created with PHP. You create some files, writ
 
 Four pages are lay in the page folder.
 The user authentication global state serves \_app.js with createContext React hook and is stored in the local memory.
-I try to optimize performance by caching functions value by the memoize-one library, but I'm not sure to have success.
+I try to optimize performance by caching functions value by the (memoize-one library) useMemo React hook, (but I'm not sure to have success).
 
 live demo: https://next-test.kotenkoroman2018.now.sh
