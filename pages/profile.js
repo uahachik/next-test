@@ -21,7 +21,9 @@ const Profile = ({ data }) => {
         <h2 className="card-header text-center py-2">Account Page</h2>
         {data.map(profile => (
           <div className="list-group-item" key={profile.id}>
-            <div className="card card-header">Full Name: {profile.name}</div>
+            <div className="card card-header">
+              Full Name: <span className="text-info">{profile.name}</span>
+            </div>
             <p className="card-text pt-2 ml-4">email: {profile.email}</p>
           </div>
         ))}
