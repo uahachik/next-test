@@ -11,5 +11,6 @@ I try to optimize performance by caching functions value by the (memoize-one lib
 live demo: https://next-test.kotenkoroman2018.now.sh
 
 Credentials:
-login: reactdev
-password: 123456
+
+<p>login: reactdev
+<p>password: 123456
