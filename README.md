@@ -9,3 +9,7 @@ The user authentication global state serves \_app.js with createContext React ho
 I try to optimize performance by caching functions value by the (memoize-one library) useMemo React hook, (but I'm not sure to have success).
 
 live demo: https://next-test.kotenkoroman2018.now.sh
+
+Credentials:
+login: reactdev
+password: 123456

@@ -3,7 +3,7 @@ import Nav from './nav';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Head>
         <title>Frontend Test</title>
         <meta
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       </Head>
       <Nav />
       <div className="container">{children}</div>
-    </div>
+    </>
   );
 };
 
