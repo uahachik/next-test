@@ -12,5 +12,5 @@ live demo: https://next-test.kotenkoroman2018.now.sh
 
 Credentials:
 
-<p>login: reactdev
-<p>password: 123456
+<div style='margin-right: 10px'>login: reactdev</div>
+<div style='margin-right: 10px'>password: 123456</div>
